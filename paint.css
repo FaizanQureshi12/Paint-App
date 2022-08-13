@@ -1,0 +1,18 @@
+#canvas {
+    border: 1px solid black;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.button {
+    background-color: tomato;
+    box-shadow: 2px 4px;
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    font-weight: bold;
+}

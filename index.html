@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="paint.css">
+</head>
+
+<body>
+
+  <div class="field">
+    <canvas id="canvas"></canvas>
+    <div class="tool">
+      <center><button type="button" class="button" onclick="download_canvas()">
+          Download
+        </button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="button" onclick="clear_2()">Clear</button>
+        <br><br>
+        <div class="input-color-container">
+          <input id="picker" value="#ed6868" class="input-color" type="color" oninput="drawColor = this.value" />
+        </div>
+        <input oninput="darwWidth = this.value" type="range" min="1" max="100" class="range" />
+    </div>
+    </center>
+  </div>
+  
+  <script src="paint.js"></script>
+
+</body>
+
+</html>
